@@ -17,6 +17,9 @@ const UserReducer=(state=initialstate, action)=>{
         
         return{...state, users:[...state.users, newUser]};
 
+        case "DELETE_USER":
+          const filteredUsers=state.users.filter(user=>user.id!==action.payload);
+          return{...state, users:filteredUsers};
       default:
         return state;
       }

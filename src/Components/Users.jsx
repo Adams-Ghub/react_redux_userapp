@@ -7,6 +7,7 @@ const Users=({name,email,gen})=>{
                 <div>Name:{name}</div>
                 <div>Email:{email}</div>
                 <div>Gen:{gen}</div>
+                
                 <hr/>
             </div>
         )
